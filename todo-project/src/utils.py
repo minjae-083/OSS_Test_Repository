@@ -4,8 +4,8 @@ from datetime import datetime
 
 
 def get_today():
-    """오늘 날짜를 YYYY-MM-DD 형식으로 반환"""
-    return datetime.now().strftime("%Y-%m-%d")
+    """오늘 날짜를 YYYY/MM/DD 형식으로 반환"""
+    return datetime.now().strftime("%Y/%m/%d")
 
 
 def format_date(date_str):
