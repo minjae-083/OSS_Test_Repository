@@ -27,6 +27,10 @@ class TodoManager:
         """전체 할 일 조회"""
         return self.todos
 
+    def search(self, keyword):
+        """키워드로 할 일 검색"""
+        return [t for t in self.todos if keyword in t["title"]]
+
     def complete(self, todo_id):
         """할 일 완료 처리"""
         for todo in self.todos:
